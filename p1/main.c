@@ -17,19 +17,19 @@ int main(void)
         //대소 관계를 출력
         if (guess > answer)
         {
-            printf("%d>?\n", guess, guess);
+            printf("%d>? \n", guess, guess);
         }
         else if (guess < answer)
         {
-            printf("%d<?\n", guess, guess);
+            printf("%d<? \n", guess, guess);
         }
         else
         {
-            printf("%d==?\n", guess, guess);
+            printf("%d==? \n", guess, guess);
         }
-    //guess랑 answer이랑 같아지면 반복종료
+
     } while (guess != answer);
-    //시도횟수를 출력
+
     printf("%d\n", guess, count);
 
     return 0;
