@@ -17,20 +17,19 @@ int main(void)
         /*대소 관계를 출력*/
         if (guess > answer)
         {
-            printf("%d>? \n", guess, guess);
+            printf("%d>?\n", guess, guess);
         }
         else if (guess < answer)
         {
-            printf("%d<? \n", guess, guess);
+            printf("%d<?\n", guess, guess);
         }
         else
         {
-            printf("%d==? \n", guess, guess);
+            printf("%d==?\n", guess, guess);
         }
 
     } while (guess != answer);
 
-    printf("%d\n", guess);
     printf("%d\n", count);
     
     return 0;
