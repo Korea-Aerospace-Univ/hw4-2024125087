@@ -5,16 +5,16 @@ int main(void)
     int answer;
     int guess;
     int count = 0;
-    //정답을 입력받고 answer에 저장
+    /*정답을 입력받고 answer에 저장*/
     
     scanf("%d", &answer);
     
     do
     {
-        //정수를 스캔하고 시도횟수에 1 더하기
+        /*정수를 스캔하고 시도횟수에 1 더하기*/
         scanf("%d", &guess);
         count++;
-        //대소 관계를 출력
+        /*대소 관계를 출력*/
         if (guess > answer)
         {
             printf("%d>? \n", guess, guess);
@@ -30,7 +30,8 @@ int main(void)
 
     } while (guess != answer);
 
-    printf("%d\n", guess, count);
-
+    printf("%d\n", guess);
+    printf("%d\n", count);
+    
     return 0;
 }
