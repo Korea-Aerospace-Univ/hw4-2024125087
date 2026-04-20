@@ -29,7 +29,7 @@ int main(void)
         }
     //guess랑 answer이랑 같아지면 반복종료
     } while (guess != answer);
-    //시도횟수 출력
+    //시도횟수를 출력
     printf("%d\n", guess, count);
 
     return 0;
