@@ -1,36 +1,35 @@
-#include <stdio.h>
+#include <stdio.h>  
 
 int main(void)
 {
-    int answer;
-    int guess;
-    int count = 0;
-    /*정답을 입력받고 answer에 저장*/
-    
-    scanf("%d", &answer);
-    
+    int answer;      // 정답 값을 저장할 변수
+    int guess;       // 입력하는 guess 값을 저장할 변수
+    int count = 0;   // 몇 번 시도했는지 세는 변수 
+
+    scanf("%d", &answer);   // 정답 숫자를 입력받아서 answer에 저장
+
     do
     {
-        /*정수를 스캔하고 시도횟수에 1 더하기*/
-        scanf("%d", &guess);
-        count++;
+        scanf("%d", &guess); // 추측한 숫자를 입력받아서 guess에 저장
+        count++;             // 시도 횟수를 1 증가
+
         /*대소 관계를 출력*/
-        if (guess > answer)
+        if (guess > answer)          // 추측값이 정답보다 크면
         {
-            printf("%d>?\n", guess, guess);
+            printf("%d>?\n", guess); // "입력값 > ?" 형태로 출력 
         }
-        else if (guess < answer)
+        else if (guess < answer)     // 추측값이 정답보다 작으면
         {
-            printf("%d<?\n", guess, guess);
+            printf("%d<?\n", guess); // "입력값 < ?" 형태로 출력
         }
-        else
+        else                         // 추측값이 정답과 같으면
         {
-            printf("%d==?\n", guess, guess);
+            printf("%d==?\n", guess);// "입력값 == ?" 형태로 출력
         }
 
-    } while (guess != answer);
+    } while (guess != answer); // 정답을 맞출 때까지 반복
 
-    printf("%d\n", count);
+    printf("%d\n", count);     // 총 몇 번 시도했는지 출력
     
-    return 0;
+    return 0;                  // 종료
 }
